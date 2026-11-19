@@ -1,0 +1,140 @@
+{
+  "basis": "fully_matched_sell_transactions_FIFO",
+  "breakeven": 0,
+  "closed_trades": 4,
+  "cost_bps_per_side": 10,
+  "excluded_unmatched_sell_ids": [],
+  "expectancy_per_trade": -712.475,
+  "gross_loss": 4020.7,
+  "gross_profit": 1170.8,
+  "limitation": "Sample transactions are synthetic; this is not market backtest evidence. Open positions excluded.",
+  "losses": 3,
+  "net_realized_pnl": -2849.9,
+  "open_lots": [
+    {
+      "age_days": 379,
+      "buy_transaction_id": "T007",
+      "quantity": 300.0,
+      "symbol": "GOLDBEES"
+    },
+    {
+      "age_days": 371,
+      "buy_transaction_id": "T008",
+      "quantity": 60.0,
+      "symbol": "HDFCBANK"
+    },
+    {
+      "age_days": 337,
+      "buy_transaction_id": "T010",
+      "quantity": 100.0,
+      "symbol": "HDFCLIQUID"
+    },
+    {
+      "age_days": 413,
+      "buy_transaction_id": "T004",
+      "quantity": 50.0,
+      "symbol": "ICICIBANK"
+    },
+    {
+      "age_days": 133,
+      "buy_transaction_id": "T020",
+      "quantity": 20.0,
+      "symbol": "ICICIBANK"
+    },
+    {
+      "age_days": 421,
+      "buy_transaction_id": "T003",
+      "quantity": 20.0,
+      "symbol": "INFY"
+    },
+    {
+      "age_days": 196,
+      "buy_transaction_id": "T019",
+      "quantity": 30.0,
+      "symbol": "INFY"
+    },
+    {
+      "age_days": 344,
+      "buy_transaction_id": "T009",
+      "quantity": 150.0,
+      "symbol": "ITC"
+    },
+    {
+      "age_days": 428,
+      "buy_transaction_id": "T002",
+      "quantity": 100.0,
+      "symbol": "NIFTYBEES"
+    },
+    {
+      "age_days": 260,
+      "buy_transaction_id": "T017",
+      "quantity": 100.0,
+      "symbol": "NIFTYBEES"
+    },
+    {
+      "age_days": 320,
+      "buy_transaction_id": "T011",
+      "quantity": 10.0,
+      "symbol": "PAYTM"
+    },
+    {
+      "age_days": 306,
+      "buy_transaction_id": "T013",
+      "quantity": 30.0,
+      "symbol": "PAYTM"
+    },
+    {
+      "age_days": 433,
+      "buy_transaction_id": "T001",
+      "quantity": 25.0,
+      "symbol": "RELIANCE"
+    },
+    {
+      "age_days": 277,
+      "buy_transaction_id": "T016",
+      "quantity": 15.0,
+      "symbol": "RELIANCE"
+    },
+    {
+      "age_days": 302,
+      "buy_transaction_id": "T014",
+      "quantity": 30.0,
+      "symbol": "SUNPHARMA"
+    },
+    {
+      "age_days": 398,
+      "buy_transaction_id": "T006",
+      "quantity": 80.0,
+      "symbol": "TATAMOTORS"
+    },
+    {
+      "age_days": 407,
+      "buy_transaction_id": "T005",
+      "quantity": 25.0,
+      "symbol": "TCS"
+    }
+  ],
+  "outcomes": [
+    {
+      "net_pnl": -1557.9,
+      "sell_transaction_id": "T012"
+    },
+    {
+      "net_pnl": -1638.0,
+      "sell_transaction_id": "T015"
+    },
+    {
+      "net_pnl": -824.8,
+      "sell_transaction_id": "T018"
+    },
+    {
+      "net_pnl": 1170.8,
+      "sell_transaction_id": "T021"
+    }
+  ],
+  "profit_factor": 0.291193,
+  "win_loss_ratio": 0.333333,
+  "win_loss_ratio_status": "defined",
+  "win_rate_pct": 25.0,
+  "wins": 1
+}
