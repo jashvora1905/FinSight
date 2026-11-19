@@ -216,3 +216,11 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Local runtime state and pendrive-only dependencies
+*.db
+*.db-shm
+*.db-wal
+offline_wheels/
+results/local-tests.xml
+results/expected.json
