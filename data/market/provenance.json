@@ -1,0 +1,58 @@
+{
+  "provider": "Yahoo Finance chart endpoint",
+  "retrieved_utc": "2026-11-19T17:25:01.143303+00:00",
+  "selection": "Four preselected Indian large-cap equities and NIFTY 50 index. Convenience universe, survivorship bias; no universe selection optimisation.",
+  "series": [
+    {
+      "symbol": "RELIANCE.NS",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/RELIANCE.NS?period1=1546300800&period2=1767225600&interval=1d",
+      "raw_sha256": "14ee2e7a2e905db8b49a3226ee4b95a077071772a073ef38bcd31e9fe33590cc",
+      "observations": 1730,
+      "first": "2019-01-01",
+      "last": "2025-12-31",
+      "basis": "adjusted_close",
+      "currency": "INR"
+    },
+    {
+      "symbol": "TCS.NS",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/TCS.NS?period1=1546300800&period2=1767225600&interval=1d",
+      "raw_sha256": "394245521c4102d935610aa441991e2e54a09a110f917f3f9d6059fc1f663d60",
+      "observations": 1730,
+      "first": "2019-01-01",
+      "last": "2025-12-31",
+      "basis": "adjusted_close",
+      "currency": "INR"
+    },
+    {
+      "symbol": "HDFCBANK.NS",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/HDFCBANK.NS?period1=1546300800&period2=1767225600&interval=1d",
+      "raw_sha256": "a3b10602032e18171b6587b94c48141d71117ee2b55eefb64394b470de4d9f6b",
+      "observations": 1730,
+      "first": "2019-01-01",
+      "last": "2025-12-31",
+      "basis": "adjusted_close",
+      "currency": "INR"
+    },
+    {
+      "symbol": "ITC.NS",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/ITC.NS?period1=1546300800&period2=1767225600&interval=1d",
+      "raw_sha256": "917f711fce25c6541d952390e0c7ba11e674712bf24eaa9651790122690a37ad",
+      "observations": 1730,
+      "first": "2019-01-01",
+      "last": "2025-12-31",
+      "basis": "adjusted_close",
+      "currency": "INR"
+    },
+    {
+      "symbol": "^NSEI",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/^NSEI?period1=1546300800&period2=1767225600&interval=1d",
+      "raw_sha256": "1a846fc829066343c9a96f0849b5889c79677682ff205fe57b1d4ede7a982197",
+      "observations": 1727,
+      "first": "2019-01-02",
+      "last": "2025-12-31",
+      "basis": "adjusted_close",
+      "currency": "INR"
+    }
+  ],
+  "prices_sha256": "4f42c63f3430ece4b593687680d4fa2010afc3859a3c6d697d9789e04516af8f"
+}

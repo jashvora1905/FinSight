@@ -1,0 +1,17 @@
+{
+  "browser": "Microsoft Edge headless via Playwright",
+  "desktop": [
+    1440,
+    1100
+  ],
+  "mobile": [
+    390,
+    844
+  ],
+  "sample_upload": "passed",
+  "holdings_rendered": 12,
+  "health_score": 72.43,
+  "horizontal_overflow_mobile": false,
+  "public_export_private_diagnostics": false,
+  "invalid_upload": "rejected; previous results hidden"
+}

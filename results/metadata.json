@@ -1,0 +1,19 @@
+{
+  "data_sha256": "4f42c63f3430ece4b593687680d4fa2010afc3859a3c6d697d9789e04516af8f",
+  "limitations": [
+    "Retrospective holdout; not a previously untouched or prospective test.",
+    "Convenience selection of surviving stocks; no delisted universe or corporate-event audit.",
+    "Adjusted closes are total-return proxies; exact executable prices are not modeled.",
+    "NIFTY 50 is a price index, excludes dividends and is not directly investable.",
+    "Costs are per-side assumptions, not a tax or brokerage calculator.",
+    "Health thresholds are heuristic; no predictive or commercial validity established."
+  ],
+  "market_runs": 120,
+  "methodology_version": "review-evaluation-v1",
+  "periods": {
+    "development": "2020-2022",
+    "evaluation": "2023-2025",
+    "warmup": "2019"
+  },
+  "pipeline_checkpoints": 152
+}

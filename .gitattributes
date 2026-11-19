@@ -1,0 +1,7 @@
+# Frozen market inputs are checked by byte hash; do not rewrite line endings.
+data/market/* -text
+
+# Preserve binary artifacts exactly.
+*.gz binary
+*.pdf binary
+*.png binary

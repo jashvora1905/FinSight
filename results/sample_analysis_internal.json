@@ -1,0 +1,1021 @@
+{
+  "analytics": {
+    "allocation": {
+      "basis": "current_value",
+      "by_asset_type": [
+        {
+          "current_value": 681344.75,
+          "drift_pct": 1.71,
+          "holdings": 9,
+          "invested_value": 592249.8,
+          "invested_weight_pct": 55.51,
+          "name": "Equity",
+          "pnl": 89094.95,
+          "return_pct": 15.04,
+          "weight_pct": 57.23
+        },
+        {
+          "current_value": 438500.0,
+          "drift_pct": -2.54,
+          "holdings": 1,
+          "invested_value": 420000.0,
+          "invested_weight_pct": 39.37,
+          "name": "Mutual Fund",
+          "pnl": 18500.0,
+          "return_pct": 4.4,
+          "weight_pct": 36.83
+        },
+        {
+          "current_value": 70750.0,
+          "drift_pct": 0.82,
+          "holdings": 2,
+          "invested_value": 54600.0,
+          "invested_weight_pct": 5.12,
+          "name": "ETF",
+          "pnl": 16150.0,
+          "return_pct": 29.58,
+          "weight_pct": 5.94
+        }
+      ],
+      "by_sector": [
+        {
+          "current_value": 438500.0,
+          "drift_pct": -2.54,
+          "holdings": 1,
+          "invested_value": 420000.0,
+          "invested_weight_pct": 39.37,
+          "name": "Debt",
+          "pnl": 18500.0,
+          "return_pct": 4.4,
+          "weight_pct": 36.83
+        },
+        {
+          "current_value": 189816.0,
+          "drift_pct": 0.78,
+          "holdings": 2,
+          "invested_value": 161799.8,
+          "invested_weight_pct": 15.17,
+          "name": "Financials",
+          "pnl": 28016.2,
+          "return_pct": 17.32,
+          "weight_pct": 15.94
+        },
+        {
+          "current_value": 170293.75,
+          "drift_pct": -0.11,
+          "holdings": 2,
+          "invested_value": 153750.0,
+          "invested_weight_pct": 14.41,
+          "name": "IT",
+          "pnl": 16543.75,
+          "return_pct": 10.76,
+          "weight_pct": 14.3
+        },
+        {
+          "current_value": 115620.0,
+          "drift_pct": 0.53,
+          "holdings": 1,
+          "invested_value": 98000.0,
+          "invested_weight_pct": 9.19,
+          "name": "Energy",
+          "pnl": 17620.0,
+          "return_pct": 17.98,
+          "weight_pct": 9.71
+        },
+        {
+          "current_value": 70545.0,
+          "drift_pct": 0.58,
+          "holdings": 1,
+          "invested_value": 57000.0,
+          "invested_weight_pct": 5.34,
+          "name": "FMCG",
+          "pnl": 13545.0,
+          "return_pct": 23.76,
+          "weight_pct": 5.93
+        },
+        {
+          "current_value": 57664.0,
+          "drift_pct": 0.04,
+          "holdings": 1,
+          "invested_value": 51200.0,
+          "invested_weight_pct": 4.8,
+          "name": "Auto",
+          "pnl": 6464.0,
+          "return_pct": 12.62,
+          "weight_pct": 4.84
+        },
+        {
+          "current_value": 53080.0,
+          "drift_pct": 0.52,
+          "holdings": 1,
+          "invested_value": 42000.0,
+          "invested_weight_pct": 3.94,
+          "name": "Diversified",
+          "pnl": 11080.0,
+          "return_pct": 26.38,
+          "weight_pct": 4.46
+        },
+        {
+          "current_value": 48600.0,
+          "drift_pct": 1.13,
+          "holdings": 1,
+          "invested_value": 31500.0,
+          "invested_weight_pct": 2.95,
+          "name": "Healthcare",
+          "pnl": 17100.0,
+          "return_pct": 54.29,
+          "weight_pct": 4.08
+        },
+        {
+          "current_value": 28806.0,
+          "drift_pct": -1.24,
+          "holdings": 1,
+          "invested_value": 39000.0,
+          "invested_weight_pct": 3.66,
+          "name": "Fintech",
+          "pnl": -10194.0,
+          "return_pct": -26.14,
+          "weight_pct": 2.42
+        },
+        {
+          "current_value": 17670.0,
+          "drift_pct": 0.3,
+          "holdings": 1,
+          "invested_value": 12600.0,
+          "invested_weight_pct": 1.18,
+          "name": "Commodities",
+          "pnl": 5070.0,
+          "return_pct": 40.24,
+          "weight_pct": 1.48
+        }
+      ],
+      "by_security": [
+        {
+          "current_value": 438500.0,
+          "drift_pct": -2.54,
+          "holdings": 1,
+          "invested_value": 420000.0,
+          "invested_weight_pct": 39.37,
+          "name": "HDFCLIQUID",
+          "pnl": 18500.0,
+          "return_pct": 4.4,
+          "weight_pct": 36.83
+        },
+        {
+          "current_value": 115620.0,
+          "drift_pct": 0.53,
+          "holdings": 1,
+          "invested_value": 98000.0,
+          "invested_weight_pct": 9.19,
+          "name": "RELIANCE",
+          "pnl": 17620.0,
+          "return_pct": 17.98,
+          "weight_pct": 9.71
+        },
+        {
+          "current_value": 102624.0,
+          "drift_pct": -0.27,
+          "holdings": 1,
+          "invested_value": 94800.0,
+          "invested_weight_pct": 8.89,
+          "name": "HDFCBANK",
+          "pnl": 7824.0,
+          "return_pct": 8.25,
+          "weight_pct": 8.62
+        },
+        {
+          "current_value": 91256.25,
+          "drift_pct": -0.07,
+          "holdings": 1,
+          "invested_value": 82500.0,
+          "invested_weight_pct": 7.73,
+          "name": "TCS",
+          "pnl": 8756.25,
+          "return_pct": 10.61,
+          "weight_pct": 7.66
+        },
+        {
+          "current_value": 87192.0,
+          "drift_pct": 1.04,
+          "holdings": 1,
+          "invested_value": 66999.8,
+          "invested_weight_pct": 6.28,
+          "name": "ICICIBANK",
+          "pnl": 20192.2,
+          "return_pct": 30.14,
+          "weight_pct": 7.32
+        },
+        {
+          "current_value": 79037.5,
+          "drift_pct": -0.04,
+          "holdings": 1,
+          "invested_value": 71250.0,
+          "invested_weight_pct": 6.68,
+          "name": "INFY",
+          "pnl": 7787.5,
+          "return_pct": 10.93,
+          "weight_pct": 6.64
+        },
+        {
+          "current_value": 70545.0,
+          "drift_pct": 0.58,
+          "holdings": 1,
+          "invested_value": 57000.0,
+          "invested_weight_pct": 5.34,
+          "name": "ITC",
+          "pnl": 13545.0,
+          "return_pct": 23.76,
+          "weight_pct": 5.93
+        },
+        {
+          "current_value": 57664.0,
+          "drift_pct": 0.04,
+          "holdings": 1,
+          "invested_value": 51200.0,
+          "invested_weight_pct": 4.8,
+          "name": "TATAMOTORS",
+          "pnl": 6464.0,
+          "return_pct": 12.62,
+          "weight_pct": 4.84
+        },
+        {
+          "current_value": 53080.0,
+          "drift_pct": 0.52,
+          "holdings": 1,
+          "invested_value": 42000.0,
+          "invested_weight_pct": 3.94,
+          "name": "NIFTYBEES",
+          "pnl": 11080.0,
+          "return_pct": 26.38,
+          "weight_pct": 4.46
+        },
+        {
+          "current_value": 48600.0,
+          "drift_pct": 1.13,
+          "holdings": 1,
+          "invested_value": 31500.0,
+          "invested_weight_pct": 2.95,
+          "name": "SUNPHARMA",
+          "pnl": 17100.0,
+          "return_pct": 54.29,
+          "weight_pct": 4.08
+        },
+        {
+          "current_value": 28806.0,
+          "drift_pct": -1.24,
+          "holdings": 1,
+          "invested_value": 39000.0,
+          "invested_weight_pct": 3.66,
+          "name": "PAYTM",
+          "pnl": -10194.0,
+          "return_pct": -26.14,
+          "weight_pct": 2.42
+        },
+        {
+          "current_value": 17670.0,
+          "drift_pct": 0.3,
+          "holdings": 1,
+          "invested_value": 12600.0,
+          "invested_weight_pct": 1.18,
+          "name": "GOLDBEES",
+          "pnl": 5070.0,
+          "return_pct": 40.24,
+          "weight_pct": 1.48
+        }
+      ],
+      "number_of_asset_types": 3,
+      "number_of_sectors": 10
+    },
+    "holdings": [
+      {
+        "asset_type": "Mutual Fund",
+        "average_buy_price": 4200.0,
+        "company_name": "HDFC Liquid Fund",
+        "contribution_pct": 1.73,
+        "current_price": 4385.0,
+        "current_value": 438500.0,
+        "invested_value": 420000.0,
+        "pnl": 18500.0,
+        "price_missing": false,
+        "quantity": 100.0,
+        "return_pct": 4.4,
+        "sector": "Debt",
+        "status": "gain",
+        "symbol": "HDFCLIQUID",
+        "weight_pct": 36.83
+      },
+      {
+        "asset_type": "Equity",
+        "average_buy_price": 2450.0,
+        "company_name": "Reliance Industries",
+        "contribution_pct": 1.65,
+        "current_price": 2890.5,
+        "current_value": 115620.0,
+        "invested_value": 98000.0,
+        "pnl": 17620.0,
+        "price_missing": false,
+        "quantity": 40.0,
+        "return_pct": 17.98,
+        "sector": "Energy",
+        "status": "gain",
+        "symbol": "RELIANCE",
+        "weight_pct": 9.71
+      },
+      {
+        "asset_type": "Equity",
+        "average_buy_price": 1580.0,
+        "company_name": "HDFC Bank",
+        "contribution_pct": 0.73,
+        "current_price": 1710.4,
+        "current_value": 102624.0,
+        "invested_value": 94800.0,
+        "pnl": 7824.0,
+        "price_missing": false,
+        "quantity": 60.0,
+        "return_pct": 8.25,
+        "sector": "Financials",
+        "status": "gain",
+        "symbol": "HDFCBANK",
+        "weight_pct": 8.62
+      },
+      {
+        "asset_type": "Equity",
+        "average_buy_price": 3300.0,
+        "company_name": "Tata Consultancy Services",
+        "contribution_pct": 0.82,
+        "current_price": 3650.25,
+        "current_value": 91256.25,
+        "invested_value": 82500.0,
+        "pnl": 8756.25,
+        "price_missing": false,
+        "quantity": 25.0,
+        "return_pct": 10.61,
+        "sector": "IT",
+        "status": "gain",
+        "symbol": "TCS",
+        "weight_pct": 7.66
+      },
+      {
+        "asset_type": "Equity",
+        "average_buy_price": 957.14,
+        "company_name": "ICICI Bank",
+        "contribution_pct": 1.89,
+        "current_price": 1245.6,
+        "current_value": 87192.0,
+        "invested_value": 66999.8,
+        "pnl": 20192.2,
+        "price_missing": false,
+        "quantity": 70.0,
+        "return_pct": 30.14,
+        "sector": "Financials",
+        "status": "gain",
+        "symbol": "ICICIBANK",
+        "weight_pct": 7.32
+      },
+      {
+        "asset_type": "Equity",
+        "average_buy_price": 1425.0,
+        "company_name": "Infosys",
+        "contribution_pct": 0.73,
+        "current_price": 1580.75,
+        "current_value": 79037.5,
+        "invested_value": 71250.0,
+        "pnl": 7787.5,
+        "price_missing": false,
+        "quantity": 50.0,
+        "return_pct": 10.93,
+        "sector": "IT",
+        "status": "gain",
+        "symbol": "INFY",
+        "weight_pct": 6.64
+      },
+      {
+        "asset_type": "Equity",
+        "average_buy_price": 380.0,
+        "company_name": "ITC Ltd",
+        "contribution_pct": 1.27,
+        "current_price": 470.3,
+        "current_value": 70545.0,
+        "invested_value": 57000.0,
+        "pnl": 13545.0,
+        "price_missing": false,
+        "quantity": 150.0,
+        "return_pct": 23.76,
+        "sector": "FMCG",
+        "status": "gain",
+        "symbol": "ITC",
+        "weight_pct": 5.93
+      },
+      {
+        "asset_type": "Equity",
+        "average_buy_price": 640.0,
+        "company_name": "Tata Motors",
+        "contribution_pct": 0.61,
+        "current_price": 720.8,
+        "current_value": 57664.0,
+        "invested_value": 51200.0,
+        "pnl": 6464.0,
+        "price_missing": false,
+        "quantity": 80.0,
+        "return_pct": 12.62,
+        "sector": "Auto",
+        "status": "gain",
+        "symbol": "TATAMOTORS",
+        "weight_pct": 4.84
+      },
+      {
+        "asset_type": "ETF",
+        "average_buy_price": 210.0,
+        "company_name": "Nippon India Nifty 50 ETF",
+        "contribution_pct": 1.04,
+        "current_price": 265.4,
+        "current_value": 53080.0,
+        "invested_value": 42000.0,
+        "pnl": 11080.0,
+        "price_missing": false,
+        "quantity": 200.0,
+        "return_pct": 26.38,
+        "sector": "Diversified",
+        "status": "gain",
+        "symbol": "NIFTYBEES",
+        "weight_pct": 4.46
+      },
+      {
+        "asset_type": "Equity",
+        "average_buy_price": 1050.0,
+        "company_name": "Sun Pharma",
+        "contribution_pct": 1.6,
+        "current_price": 1620.0,
+        "current_value": 48600.0,
+        "invested_value": 31500.0,
+        "pnl": 17100.0,
+        "price_missing": false,
+        "quantity": 30.0,
+        "return_pct": 54.29,
+        "sector": "Healthcare",
+        "status": "gain",
+        "symbol": "SUNPHARMA",
+        "weight_pct": 4.08
+      },
+      {
+        "asset_type": "Equity",
+        "average_buy_price": 975.0,
+        "company_name": "One97 Communications",
+        "contribution_pct": -0.96,
+        "current_price": 720.15,
+        "current_value": 28806.0,
+        "invested_value": 39000.0,
+        "pnl": -10194.0,
+        "price_missing": false,
+        "quantity": 40.0,
+        "return_pct": -26.14,
+        "sector": "Fintech",
+        "status": "loss",
+        "symbol": "PAYTM",
+        "weight_pct": 2.42
+      },
+      {
+        "asset_type": "ETF",
+        "average_buy_price": 42.0,
+        "company_name": "Nippon India Gold ETF",
+        "contribution_pct": 0.48,
+        "current_price": 58.9,
+        "current_value": 17670.0,
+        "invested_value": 12600.0,
+        "pnl": 5070.0,
+        "price_missing": false,
+        "quantity": 300.0,
+        "return_pct": 40.24,
+        "sector": "Commodities",
+        "status": "gain",
+        "symbol": "GOLDBEES",
+        "weight_pct": 1.48
+      }
+    ],
+    "portfolio_id": "P001",
+    "summary": {
+      "current_value": 1190594.75,
+      "gainers": 11,
+      "invested_value": 1066849.8,
+      "largest_pnl_contributor": {
+        "pnl": 20192.2,
+        "return_pct": 30.14,
+        "symbol": "ICICIBANK"
+      },
+      "largest_pnl_detractor": {
+        "pnl": -10194.0,
+        "return_pct": -26.14,
+        "symbol": "PAYTM"
+      },
+      "losers": 1,
+      "number_of_holdings": 12,
+      "pnl": 123744.95,
+      "return_pct": 11.6,
+      "status": "gain",
+      "top_gainers": [
+        {
+          "pnl": 17100.0,
+          "return_pct": 54.29,
+          "symbol": "SUNPHARMA"
+        },
+        {
+          "pnl": 5070.0,
+          "return_pct": 40.24,
+          "symbol": "GOLDBEES"
+        },
+        {
+          "pnl": 20192.2,
+          "return_pct": 30.14,
+          "symbol": "ICICIBANK"
+        }
+      ],
+      "top_losers": [
+        {
+          "pnl": -10194.0,
+          "return_pct": -26.14,
+          "symbol": "PAYTM"
+        }
+      ],
+      "total_gains": 133938.95,
+      "total_losses": -10194.0,
+      "unchanged": 0
+    },
+    "warnings": []
+  },
+  "behavior": {
+    "behavior_score": {
+      "components": {
+        "activity_penalty": 0.0,
+        "short_hold_loss_penalty": 18.75
+      },
+      "formula": "100 - 50 * flagged_active_day_fraction - 50 * flagged_matched_quantity_fraction",
+      "interpretation": "Experimental rule-based indicator; higher means fewer configured flags. It is not a validated measure of investor skill or psychological health.",
+      "reasons": [],
+      "scale": {
+        "maximum": 100,
+        "minimum": 0
+      },
+      "status": "available",
+      "value": 81.25
+    },
+    "frequency": {
+      "active_days": 21,
+      "calendar_days": 434,
+      "daily_trade_counts": {
+        "2024-01-10": 1,
+        "2024-01-15": 1,
+        "2024-01-22": 1,
+        "2024-01-30": 1,
+        "2024-02-05": 1,
+        "2024-02-14": 1,
+        "2024-03-04": 1,
+        "2024-03-12": 1,
+        "2024-04-08": 1,
+        "2024-04-15": 1,
+        "2024-05-02": 1,
+        "2024-05-09": 1,
+        "2024-05-16": 1,
+        "2024-05-20": 1,
+        "2024-05-23": 1,
+        "2024-06-14": 1,
+        "2024-07-01": 1,
+        "2024-08-26": 1,
+        "2024-09-03": 1,
+        "2024-11-05": 1,
+        "2025-03-18": 1
+      },
+      "observation_end": "2025-03-18",
+      "observation_start": "2024-01-10",
+      "overtrading_indicator": {
+        "daily_trade_threshold": 5,
+        "flagged": false,
+        "flagged_active_day_fraction": 0.0,
+        "flagged_days": {},
+        "label": "high_activity_proxy"
+      },
+      "trades_per_active_day": 1.0,
+      "trades_per_calendar_day": 0.0484
+    },
+    "holdings": {
+      "average_closed_holding_days": 109.0,
+      "matches": [
+        {
+          "buy_date": "2024-05-02",
+          "buy_price": 990.0,
+          "buy_transaction_id": "T011",
+          "holding_days": 7,
+          "quantity": 30.0,
+          "return_percentage": -5.05050505050505,
+          "sell_date": "2024-05-09",
+          "sell_price": 940.0,
+          "sell_transaction_id": "T012",
+          "symbol": "PAYTM"
+        },
+        {
+          "buy_date": "2024-05-02",
+          "buy_price": 990.0,
+          "buy_transaction_id": "T011",
+          "holding_days": 21,
+          "quantity": 20.0,
+          "return_percentage": -8.080808080808081,
+          "sell_date": "2024-05-23",
+          "sell_price": 910.0,
+          "sell_transaction_id": "T015",
+          "symbol": "PAYTM"
+        },
+        {
+          "buy_date": "2024-02-14",
+          "buy_price": 640.0,
+          "buy_transaction_id": "T006",
+          "holding_days": 194,
+          "quantity": 20.0,
+          "return_percentage": -6.25,
+          "sell_date": "2024-08-26",
+          "sell_price": 600.0,
+          "sell_transaction_id": "T018",
+          "symbol": "TATAMOTORS"
+        },
+        {
+          "buy_date": "2024-01-22",
+          "buy_price": 1400.0,
+          "buy_transaction_id": "T003",
+          "holding_days": 421,
+          "quantity": 10.0,
+          "return_percentage": 8.571428571428571,
+          "sell_date": "2025-03-18",
+          "sell_price": 1520.0,
+          "sell_transaction_id": "T021",
+          "symbol": "INFY"
+        }
+      ],
+      "maximum_closed_holding_days": 421,
+      "method": "FIFO",
+      "minimum_closed_holding_days": 7,
+      "open_lots": [
+        {
+          "age_days": 379,
+          "buy_transaction_id": "T007",
+          "quantity": 300.0,
+          "symbol": "GOLDBEES"
+        },
+        {
+          "age_days": 371,
+          "buy_transaction_id": "T008",
+          "quantity": 60.0,
+          "symbol": "HDFCBANK"
+        },
+        {
+          "age_days": 337,
+          "buy_transaction_id": "T010",
+          "quantity": 100.0,
+          "symbol": "HDFCLIQUID"
+        },
+        {
+          "age_days": 413,
+          "buy_transaction_id": "T004",
+          "quantity": 50.0,
+          "symbol": "ICICIBANK"
+        },
+        {
+          "age_days": 133,
+          "buy_transaction_id": "T020",
+          "quantity": 20.0,
+          "symbol": "ICICIBANK"
+        },
+        {
+          "age_days": 421,
+          "buy_transaction_id": "T003",
+          "quantity": 20.0,
+          "symbol": "INFY"
+        },
+        {
+          "age_days": 196,
+          "buy_transaction_id": "T019",
+          "quantity": 30.0,
+          "symbol": "INFY"
+        },
+        {
+          "age_days": 344,
+          "buy_transaction_id": "T009",
+          "quantity": 150.0,
+          "symbol": "ITC"
+        },
+        {
+          "age_days": 428,
+          "buy_transaction_id": "T002",
+          "quantity": 100.0,
+          "symbol": "NIFTYBEES"
+        },
+        {
+          "age_days": 260,
+          "buy_transaction_id": "T017",
+          "quantity": 100.0,
+          "symbol": "NIFTYBEES"
+        },
+        {
+          "age_days": 320,
+          "buy_transaction_id": "T011",
+          "quantity": 10.0,
+          "symbol": "PAYTM"
+        },
+        {
+          "age_days": 306,
+          "buy_transaction_id": "T013",
+          "quantity": 30.0,
+          "symbol": "PAYTM"
+        },
+        {
+          "age_days": 433,
+          "buy_transaction_id": "T001",
+          "quantity": 25.0,
+          "symbol": "RELIANCE"
+        },
+        {
+          "age_days": 277,
+          "buy_transaction_id": "T016",
+          "quantity": 15.0,
+          "symbol": "RELIANCE"
+        },
+        {
+          "age_days": 302,
+          "buy_transaction_id": "T014",
+          "quantity": 30.0,
+          "symbol": "SUNPHARMA"
+        },
+        {
+          "age_days": 398,
+          "buy_transaction_id": "T006",
+          "quantity": 80.0,
+          "symbol": "TATAMOTORS"
+        },
+        {
+          "age_days": 407,
+          "buy_transaction_id": "T005",
+          "quantity": 25.0,
+          "symbol": "TCS"
+        }
+      ],
+      "unmatched_sells": []
+    },
+    "methodology_version": "behavior-v1",
+    "panic_selling_indicator": {
+      "flagged": true,
+      "flagged_matched_quantity_fraction": 0.375,
+      "flagged_matches": [
+        {
+          "buy_date": "2024-05-02",
+          "buy_price": 990.0,
+          "buy_transaction_id": "T011",
+          "holding_days": 7,
+          "quantity": 30.0,
+          "return_percentage": -5.05050505050505,
+          "sell_date": "2024-05-09",
+          "sell_price": 940.0,
+          "sell_transaction_id": "T012",
+          "symbol": "PAYTM"
+        }
+      ],
+      "flagged_sell_count": 1,
+      "label": "short_hold_loss_selling_proxy",
+      "limitation": "Transaction rules identify short-hold loss sales, not panic or intent. No market-price history, trading strategy, fees or opening inventory is supplied.",
+      "max_holding_days": 7,
+      "minimum_loss_percentage": 5,
+      "status": "available"
+    },
+    "portfolio_id": "P001",
+    "status": "available",
+    "summary": {
+      "buy_count": 17,
+      "buy_percentage": 80.95,
+      "buy_value": 1143350.0,
+      "by_symbol": {
+        "GOLDBEES": {
+          "buy_count": 1,
+          "sell_count": 0
+        },
+        "HDFCBANK": {
+          "buy_count": 1,
+          "sell_count": 0
+        },
+        "HDFCLIQUID": {
+          "buy_count": 1,
+          "sell_count": 0
+        },
+        "ICICIBANK": {
+          "buy_count": 2,
+          "sell_count": 0
+        },
+        "INFY": {
+          "buy_count": 2,
+          "sell_count": 1
+        },
+        "ITC": {
+          "buy_count": 1,
+          "sell_count": 0
+        },
+        "NIFTYBEES": {
+          "buy_count": 2,
+          "sell_count": 0
+        },
+        "PAYTM": {
+          "buy_count": 2,
+          "sell_count": 2
+        },
+        "RELIANCE": {
+          "buy_count": 2,
+          "sell_count": 0
+        },
+        "SUNPHARMA": {
+          "buy_count": 1,
+          "sell_count": 0
+        },
+        "TATAMOTORS": {
+          "buy_count": 1,
+          "sell_count": 1
+        },
+        "TCS": {
+          "buy_count": 1,
+          "sell_count": 0
+        }
+      },
+      "sell_count": 4,
+      "sell_percentage": 19.05,
+      "sell_value": 73600.0,
+      "total_trades": 21
+    },
+    "warnings": [
+      "Thresholds and equal score weights are prototype assumptions, not financial standards.",
+      "Same-date transaction order follows input row order; dates do not establish intraday timing.",
+      "Holding statistics cover matched quantities only; open positions are reported separately.",
+      "Quantity-weighted statistics across symbols are influenced by share denominations.",
+      "No corporate-action adjustments, fees, short sales or opening holdings are modeled.",
+      "Unspecified observation boundaries use first/last transaction dates; inactivity outside them is unknown."
+    ]
+  },
+  "health_score": {
+    "band": "Moderate",
+    "components": {
+      "behavior": {
+        "available": true,
+        "base_weight": 0.25,
+        "contribution_points": 20.31,
+        "label": "Behaviour",
+        "points_lost": 4.69,
+        "source": "behavior.behavior_score",
+        "status": "available",
+        "value": 81.25,
+        "weight_applied": 0.25
+      },
+      "diversification": {
+        "available": true,
+        "base_weight": 0.25,
+        "contribution_points": 20.25,
+        "label": "Diversification",
+        "points_lost": 4.76,
+        "source": "risk_engine.diversification.diversification_score",
+        "status": "available",
+        "value": 80.98,
+        "weight_applied": 0.25
+      },
+      "performance": {
+        "available": true,
+        "base_weight": 0.15,
+        "contribution_points": 10.4,
+        "label": "Performance",
+        "points_lost": 4.6,
+        "source": "analytics.summary.return_pct",
+        "status": "available",
+        "value": 69.33,
+        "weight_applied": 0.15
+      },
+      "risk": {
+        "available": true,
+        "base_weight": 0.35,
+        "contribution_points": 21.47,
+        "label": "Risk",
+        "points_lost": 13.53,
+        "source": "risk_engine.risk_score components excluding diversification_risk (inverted)",
+        "status": "available",
+        "value": 61.34,
+        "weight_applied": 0.35
+      }
+    },
+    "coverage": 1.0,
+    "explanation": {
+      "drivers": [
+        {
+          "component": "risk",
+          "label": "Risk",
+          "points_lost": 13.53,
+          "value": 61.34,
+          "weight_applied": 0.35
+        },
+        {
+          "component": "diversification",
+          "label": "Diversification",
+          "points_lost": 4.76,
+          "value": 80.98,
+          "weight_applied": 0.25
+        },
+        {
+          "component": "behavior",
+          "label": "Behaviour",
+          "points_lost": 4.69,
+          "value": 81.25,
+          "weight_applied": 0.25
+        },
+        {
+          "component": "performance",
+          "label": "Performance",
+          "points_lost": 4.6,
+          "value": 69.33,
+          "weight_applied": 0.15
+        }
+      ],
+      "notes": [
+        "Diversification: A single holding exceeds 35% of current portfolio value.",
+        "Risk reflects concentration only: no historical price data was supplied (volatility and drawdown not measured)."
+      ],
+      "summary": "Health score 72.43 (Moderate). Largest drag: Risk (13.53 points below its maximum)."
+    },
+    "methodology_version": "health-v2",
+    "missing_components": [],
+    "score": 72.43,
+    "score_basis": "full"
+  },
+  "risk": {
+    "concentration": {
+      "holding_hhi": 0.178469,
+      "holding_weights_pct": {
+        "GOLDBEES": 1.48,
+        "HDFCBANK": 8.62,
+        "HDFCLIQUID": 36.83,
+        "ICICIBANK": 7.32,
+        "INFY": 6.64,
+        "ITC": 5.93,
+        "NIFTYBEES": 4.46,
+        "PAYTM": 2.42,
+        "RELIANCE": 9.71,
+        "SUNPHARMA": 4.08,
+        "TATAMOTORS": 4.84,
+        "TCS": 7.66
+      },
+      "largest_holding_pct": 36.83,
+      "largest_sector_pct": 36.83,
+      "sector_hhi": 0.20127,
+      "sector_weights_pct": {
+        "Auto": 4.84,
+        "Commodities": 1.48,
+        "Debt": 36.83,
+        "Diversified": 4.46,
+        "Energy": 9.71,
+        "FMCG": 5.93,
+        "Financials": 15.94,
+        "Fintech": 2.42,
+        "Healthcare": 4.08,
+        "IT": 14.3
+      },
+      "top_3_holdings_pct": 55.16
+    },
+    "diversification": {
+      "diversification_gaps": [
+        "A single holding exceeds 35% of current portfolio value."
+      ],
+      "diversification_level": "High",
+      "diversification_score": 80.98,
+      "effective_holdings": 5.6,
+      "effective_sectors": 4.97,
+      "number_of_holdings": 12,
+      "number_of_sectors": 10
+    },
+    "limitations": [
+      "Historical volatility, maximum drawdown and covariance-based risk contribution are unavailable because usable historical price data was not supplied.",
+      "Prototype score thresholds are documented project assumptions and are not investment advice."
+    ],
+    "portfolio_id": "P001",
+    "risk_metrics": {
+      "annualized_volatility_pct": null,
+      "historical_data_available": false,
+      "maximum_drawdown_pct": null,
+      "observations": 0,
+      "reason": "Historical price data not provided.",
+      "risk_contribution_pct": {}
+    },
+    "risk_score": {
+      "component_weights": {
+        "diversification_risk": 0.25,
+        "holding_concentration": 0.4,
+        "sector_concentration": 0.35
+      },
+      "components": {
+        "diversification_risk": 19.02,
+        "holding_concentration": 53.66,
+        "sector_concentration": 21.51
+      },
+      "higher_score_means": "higher measured portfolio risk",
+      "level": "Moderate",
+      "methodology_version": "prototype_v1",
+      "score": 33.75
+    }
+  }
+}

@@ -1,0 +1,1 @@
+VERIFIED: all frozen inputs, metrics, trades, equity points and pipeline checkpoints match.

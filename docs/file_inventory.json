@@ -1,0 +1,899 @@
+[
+  {
+    "path": "ai/__init__.py",
+    "lines": 3,
+    "sha256": "6a1b03657971efbad0d384e4ee99fb391b9ad72508697d9e9b8b70bb5c710f3c",
+    "purpose": "Package exports and module wiring.",
+    "functions": [],
+    "classes": [],
+    "imports": [
+      "from .insight_engine import generate_insights"
+    ]
+  },
+  {
+    "path": "ai/insight_engine.py",
+    "lines": 49,
+    "sha256": "57c9f4e887bf888db9093bd81503ef1081a48daecb902067c65b8f30aa25915a",
+    "purpose": "Grounded offline explanations; an optional selector reorders approved facts only.",
+    "functions": [
+      "generate_insights"
+    ],
+    "classes": [],
+    "imports": [
+      "from copy import deepcopy"
+    ]
+  },
+  {
+    "path": "analytics/__init__.py",
+    "lines": 43,
+    "sha256": "de77203c61f50c6ec71d8fec3f88c9d095328752ecba114535929f0545c8b5ad",
+    "purpose": "FinSight Portfolio Analytics (owner: Aditya Shah, branch feature/portfolio-analytics).",
+    "functions": [],
+    "classes": [],
+    "imports": [
+      "from .allocation import allocation_by, allocation_summary",
+      "from .calculations import absolute_pnl, current_value, invested_value, return_pct",
+      "from .performance import holding_performance, portfolio_performance",
+      "from .portfolio_metrics import PortfolioDataError, analyze_portfolio, compute_holdings, load_portfolio, portfolio_totals, validate_portfolio"
+    ]
+  },
+  {
+    "path": "analytics/allocation.py",
+    "lines": 59,
+    "sha256": "c3c10f45c0034ce9511ecbf2c3c5e2e16400134ea2d29ae82bbe3c127105997b",
+    "purpose": "Asset, sector and security allocation.",
+    "functions": [
+      "allocation_by",
+      "allocation_summary"
+    ],
+    "classes": [],
+    "imports": [
+      "from __future__ import annotations",
+      "import pandas as pd",
+      "from .calculations import money, pct, return_pct, weights_pct"
+    ]
+  },
+  {
+    "path": "analytics/calculations.py",
+    "lines": 68,
+    "sha256": "4f1285c7369ac48834bf21ec476cb7f7f9bf8d46c9b9e4fbe5c4a00ea174a85f",
+    "purpose": "Basic, reusable financial formulas used across the analytics module.",
+    "functions": [
+      "invested_value",
+      "current_value",
+      "absolute_pnl",
+      "return_pct",
+      "weights_pct",
+      "money",
+      "pct"
+    ],
+    "classes": [],
+    "imports": [
+      "from __future__ import annotations",
+      "from typing import Optional",
+      "import numpy as np",
+      "import pandas as pd"
+    ]
+  },
+  {
+    "path": "analytics/performance.py",
+    "lines": 72,
+    "sha256": "0f30f434837c81bbc158edcb8bd7c24f5c13279e50fbb240606262cd97e03163",
+    "purpose": "Stock-level and portfolio-level performance.",
+    "functions": [
+      "holding_performance",
+      "_ranked",
+      "portfolio_performance"
+    ],
+    "classes": [],
+    "imports": [
+      "from __future__ import annotations",
+      "import pandas as pd",
+      "from .calculations import money, pct"
+    ]
+  },
+  {
+    "path": "analytics/portfolio_metrics.py",
+    "lines": 230,
+    "sha256": "2051c24fa2776687ff699f7507ad92bc2148c4a4ace92cdfaa03a7ceb28d5e32",
+    "purpose": "Portfolio metrics: loading and validating portfolio data, building the",
+    "functions": [
+      "load_portfolio",
+      "validate_portfolio",
+      "_merge_duplicates",
+      "compute_holdings",
+      "portfolio_totals",
+      "analyze_portfolio"
+    ],
+    "classes": [
+      "PortfolioDataError"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from typing import Optional",
+      "import pandas as pd",
+      "import numpy as np",
+      "from .allocation import allocation_summary",
+      "from .calculations import absolute_pnl, current_value, invested_value, return_pct",
+      "from .performance import holding_performance, portfolio_performance"
+    ]
+  },
+  {
+    "path": "backend/__init__.py",
+    "lines": 1,
+    "sha256": "00a2dd878d2d59b859dd9a75ce9bb5596a87d2d520e423b0544aa4e7a21752fd",
+    "purpose": "FinSight backend (owner: Jash Vora, branch feature/backend). Layout follows the project README.",
+    "functions": [],
+    "classes": [],
+    "imports": []
+  },
+  {
+    "path": "backend/api/__init__.py",
+    "lines": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "purpose": "Package exports and module wiring.",
+    "functions": [],
+    "classes": [],
+    "imports": []
+  },
+  {
+    "path": "backend/api/behavior.py",
+    "lines": 20,
+    "sha256": "2baa70b8ca4348f293df73c138f5e3e67df888f4f884b2f27e5ab66edd9d42e7",
+    "purpose": "GET /api/portfolio/behavior.",
+    "functions": [
+      "behavior"
+    ],
+    "classes": [],
+    "imports": [
+      "from __future__ import annotations",
+      "from typing import Optional",
+      "from fastapi import APIRouter",
+      "from .. import schemas",
+      "from ..services import analysis_service",
+      "from ..services.errors import ApiError"
+    ]
+  },
+  {
+    "path": "backend/api/health.py",
+    "lines": 18,
+    "sha256": "a7bd55b6c563b0aee1d02220116231adf07d3bf78c088df3c042387779816470",
+    "purpose": "GET /api/portfolio/health: the Portfolio Health Score (methodology health-v2).",
+    "functions": [
+      "health"
+    ],
+    "classes": [],
+    "imports": [
+      "from __future__ import annotations",
+      "from typing import Optional",
+      "from fastapi import APIRouter",
+      "from .. import schemas",
+      "from ..services import analysis_service",
+      "from ..services.presentation import public_health",
+      "from ..schemas.public import PublicHealth"
+    ]
+  },
+  {
+    "path": "backend/api/insights.py",
+    "lines": 22,
+    "sha256": "041950e4ff9a6b2e0d56db50b227f78fa4eb94b80f6e8cd66f25887d96c17294",
+    "purpose": "Public grounded explanations. Private diagnostics remain Python-only.",
+    "functions": [
+      "insights"
+    ],
+    "classes": [],
+    "imports": [
+      "from __future__ import annotations",
+      "from typing import Optional",
+      "from fastapi import APIRouter",
+      "from ai import generate_insights",
+      "from ..services.analysis_service import analysis_for",
+      "from ..services.presentation import public_health",
+      "from ..services.joint_context import combined_context"
+    ]
+  },
+  {
+    "path": "backend/api/portfolio.py",
+    "lines": 70,
+    "sha256": "5f087f2c8bb05823e4143579266391cfd2c82c7457d249cfbf1fd1019a063bde",
+    "purpose": "POST /api/portfolio/upload and the portfolio analytics endpoints (README: API Structure).",
+    "functions": [
+      "_read_upload",
+      "_clean",
+      "upload",
+      "summary",
+      "holdings",
+      "performance",
+      "allocation"
+    ],
+    "classes": [],
+    "imports": [
+      "from __future__ import annotations",
+      "from typing import Optional",
+      "from fastapi import APIRouter, File, Form, UploadFile",
+      "from .. import config, schemas",
+      "from ..services import analysis_service, upload_service",
+      "from ..services.errors import ApiError",
+      "from ..services.presentation import public_upload",
+      "from ..schemas.public import PublicUpload"
+    ]
+  },
+  {
+    "path": "backend/api/risk.py",
+    "lines": 21,
+    "sha256": "6d629810ef6717525f59e2a856c11b3c56aef65c855500613828f06c2aa9e67b",
+    "purpose": "GET /api/portfolio/risk and /api/portfolio/diversification.",
+    "functions": [
+      "risk",
+      "diversification"
+    ],
+    "classes": [],
+    "imports": [
+      "from __future__ import annotations",
+      "from typing import Optional",
+      "from fastapi import APIRouter",
+      "from .. import schemas",
+      "from ..services import analysis_service"
+    ]
+  },
+  {
+    "path": "backend/config.py",
+    "lines": 17,
+    "sha256": "be9fd40128fb732627b10b8699fc967227de0642d70c7dd29be629b7cf65c4df",
+    "purpose": "Backend settings. Everything can be overridden with environment variables.",
+    "functions": [],
+    "classes": [],
+    "imports": [
+      "import os",
+      "from pathlib import Path"
+    ]
+  },
+  {
+    "path": "backend/database/__init__.py",
+    "lines": 3,
+    "sha256": "d283919a1aba5fbf1236528a18b8ccf43b5943294af116a9f949f0d13a0417fd",
+    "purpose": "Package exports and module wiring.",
+    "functions": [],
+    "classes": [],
+    "imports": [
+      "from .connection import connect, init_db"
+    ]
+  },
+  {
+    "path": "backend/database/connection.py",
+    "lines": 78,
+    "sha256": "0f84c05ca00b2ee9ce7aea563814abc7fecdfbf9efbc7e3cd1e6338c49047462",
+    "purpose": "SQLite connection + schema.",
+    "functions": [
+      "connect",
+      "init_db"
+    ],
+    "classes": [],
+    "imports": [
+      "from __future__ import annotations",
+      "import sqlite3",
+      "from .. import config"
+    ]
+  },
+  {
+    "path": "backend/database/repository.py",
+    "lines": 118,
+    "sha256": "32a92b3a5eaa899b947acb736c1211eb7e073afc6eac327c87b7ab39e10f9912",
+    "purpose": "All SQL lives here. Uploads REPLACE the stored data of every portfolio_id they contain, so a stored portfolio",
+    "functions": [
+      "_clean",
+      "_num",
+      "_text",
+      "replace_portfolios",
+      "latest_portfolio_ids",
+      "portfolio_exists",
+      "load_scope"
+    ],
+    "classes": [],
+    "imports": [
+      "from __future__ import annotations",
+      "import math",
+      "from datetime import datetime, timezone",
+      "from typing import Any, Iterable, Optional, Sequence",
+      "import pandas as pd",
+      "from ..models import Holding, Portfolio, PricePoint, Transaction",
+      "from .connection import connect"
+    ]
+  },
+  {
+    "path": "backend/main.py",
+    "lines": 71,
+    "sha256": "80cc206036f61aba052d90837b7e568a276401fb5ee9e6b6a3ddfaed6ce10584",
+    "purpose": "FinSight FastAPI app. Run from the repository root:",
+    "functions": [
+      "lifespan",
+      "_error",
+      "_api_error",
+      "_validation_error",
+      "_http_error",
+      "_unexpected",
+      "liveness"
+    ],
+    "classes": [],
+    "imports": [
+      "from __future__ import annotations",
+      "import logging",
+      "from pathlib import Path",
+      "from contextlib import asynccontextmanager",
+      "from fastapi import FastAPI, Request",
+      "from fastapi.exceptions import RequestValidationError",
+      "from fastapi.middleware.cors import CORSMiddleware",
+      "from fastapi.responses import JSONResponse",
+      "from fastapi.staticfiles import StaticFiles",
+      "from starlette.exceptions import HTTPException as StarletteHTTPException",
+      "from . import config, schemas",
+      "from .api import behavior, health, insights, portfolio, risk",
+      "from .database import init_db",
+      "from .services.errors import ApiError"
+    ]
+  },
+  {
+    "path": "backend/models/__init__.py",
+    "lines": 3,
+    "sha256": "2c324c08c0590e16763a1c47a611310df79bdc3ef9f1dd1d03da2198d5970e39",
+    "purpose": "Package exports and module wiring.",
+    "functions": [],
+    "classes": [],
+    "imports": [
+      "from .portfolio import Holding, Portfolio, PricePoint, Transaction"
+    ]
+  },
+  {
+    "path": "backend/models/portfolio.py",
+    "lines": 49,
+    "sha256": "7f4511c1da2a54513c6e63d42e93d9f3e1d8b92565a0aee382e7c96b4d0c7eff",
+    "purpose": "Row models for the SQLite tables (README: Database Structure). Plain dataclasses, no ORM.",
+    "functions": [],
+    "classes": [
+      "Portfolio",
+      "Holding",
+      "Transaction",
+      "PricePoint"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from dataclasses import dataclass",
+      "from typing import Optional"
+    ]
+  },
+  {
+    "path": "backend/schemas/__init__.py",
+    "lines": 10,
+    "sha256": "af2e630dafe5a76ce019f1dabc460631032a36f0813f0bb317606de280ee161b",
+    "purpose": "Package exports and module wiring.",
+    "functions": [],
+    "classes": [],
+    "imports": [
+      "from .behavior import Behavior",
+      "from .common import ErrorResponse, LivenessResponse, UploadInputs",
+      "from .health import HealthScore",
+      "from .portfolio import Allocation, AllocationRow, Analytics, Holding, Mover, Performance, PerformanceHolding, Summary, UploadResponse",
+      "from .risk import Concentration, Diversification, Risk, RiskScore"
+    ]
+  },
+  {
+    "path": "backend/schemas/behavior.py",
+    "lines": 18,
+    "sha256": "b76211cfa3c16a0361c2349076d72e4d21004b2396d8c9387bd4502f65bd9fff",
+    "purpose": "Behaviour response (behavior, Prisha).",
+    "functions": [],
+    "classes": [
+      "Behavior"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from typing import Any, Dict, List, Optional",
+      "from pydantic import BaseModel"
+    ]
+  },
+  {
+    "path": "backend/schemas/common.py",
+    "lines": 16,
+    "sha256": "49eaccb7ea288acab30c7d48ca8d28fd1ef4586f1b70403759705e4fb6afae5d",
+    "purpose": "Package exports and module wiring.",
+    "functions": [],
+    "classes": [
+      "LivenessResponse",
+      "ErrorResponse",
+      "UploadInputs"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from pydantic import BaseModel"
+    ]
+  },
+  {
+    "path": "backend/schemas/health.py",
+    "lines": 50,
+    "sha256": "c1431920d8d52da9cf0ab33b1b195eee3941452574a6705e009b9c2e54ce038f",
+    "purpose": "Health Score response (health-v2, backend/services/health_score.py).",
+    "functions": [],
+    "classes": [
+      "HealthComponent",
+      "HealthComponents",
+      "Driver",
+      "Explanation",
+      "HealthScore"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from typing import List, Optional",
+      "from pydantic import BaseModel"
+    ]
+  },
+  {
+    "path": "backend/schemas/portfolio.py",
+    "lines": 104,
+    "sha256": "0bbf8194468113bd813b251a075869548c948a0ab017d9aa9a80e3612a2fb4d9",
+    "purpose": "Portfolio analytics responses (analytics, Aditya) and the upload envelope.",
+    "functions": [],
+    "classes": [
+      "Mover",
+      "Summary",
+      "Holding",
+      "AllocationRow",
+      "Allocation",
+      "Analytics",
+      "PerformanceHolding",
+      "Performance",
+      "UploadResponse"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from typing import List, Optional",
+      "from pydantic import BaseModel",
+      "from .behavior import Behavior",
+      "from .common import UploadInputs",
+      "from .health import HealthScore",
+      "from .risk import Risk"
+    ]
+  },
+  {
+    "path": "backend/schemas/public.py",
+    "lines": 23,
+    "sha256": "e3ac19224fdc2728b92ab5b5c588ea1a994919a318e34ec093c9fd185987f890",
+    "purpose": "Public schema intentionally omits private diagnostic components.",
+    "functions": [],
+    "classes": [
+      "PublicHealth",
+      "PublicUpload"
+    ],
+    "imports": [
+      "from typing import List, Optional",
+      "from pydantic import BaseModel",
+      "from .portfolio import Analytics",
+      "from .risk import Risk",
+      "from .common import UploadInputs"
+    ]
+  },
+  {
+    "path": "backend/schemas/risk.py",
+    "lines": 44,
+    "sha256": "8b4e75bef050b3d0735ba398674dfc3ec263cb9e8f15b63b002cedd4d9d0e1a5",
+    "purpose": "Risk & diversification responses (risk_engine, Soumil).",
+    "functions": [],
+    "classes": [
+      "Concentration",
+      "Diversification",
+      "RiskScore",
+      "Risk"
+    ],
+    "imports": [
+      "from __future__ import annotations",
+      "from typing import Any, Dict, List, Optional",
+      "from pydantic import BaseModel"
+    ]
+  },
+  {
+    "path": "backend/services/__init__.py",
+    "lines": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "purpose": "Package exports and module wiring.",
+    "functions": [],
+    "classes": [],
+    "imports": []
+  },
+  {
+    "path": "backend/services/analysis_service.py",
+    "lines": 57,
+    "sha256": "32522eb5e5aba5b74afd73720c650e5c4199eea0b2814e25d6c710351710a2ec",
+    "purpose": "Glue between stored/uploaded data and the teammates' modules. No financial logic lives here:",
+    "functions": [
+      "run_analysis",
+      "analysis_for"
+    ],
+    "classes": [],
+    "imports": [
+      "from __future__ import annotations",
+      "from typing import Any, Dict, List, Optional",
+      "import pandas as pd",
+      "from analytics import PortfolioDataError, analyze_portfolio, compute_holdings, load_portfolio",
+      "from behavior import analyze_behavior",
+      "from risk_engine import analyze_portfolio_risk",
+      "from ..database import repository",
+      "from .errors import ApiError",
+      "from .health_score import compute_health_score"
+    ]
+  },
+  {
+    "path": "backend/services/errors.py",
+    "lines": 8,
+    "sha256": "a3b09b704d8d6b76b16201bb931381cac2e64fade0758fb7bba77702a39a67e9",
+    "purpose": "One error type for every expected failure, so clients always get {\"detail\": \"<message>\"}.",
+    "functions": [],
+    "classes": [
+      "ApiError"
+    ],
+    "imports": []
+  },
+  {
+    "path": "backend/services/health_score.py",
+    "lines": 212,
+    "sha256": "1c1ebe8c473f952be6d65671cc79c6ca5b7463aa4f829433e73b8627c8db3bd9",
+    "purpose": "FinSight Health Score, methodology health-v2 (README: Portfolio Health Score).",
+    "functions": [
+      "_round2",
+      "band_for",
+      "_finite",
+      "_clamp",
+      "_performance",
+      "_risk",
+      "_diversification",
+      "_behavior",
+      "compute_health_score",
+      "calculate_health_score"
+    ],
+    "classes": [],
+    "imports": [
+      "from __future__ import annotations",
+      "import math",
+      "from decimal import ROUND_HALF_UP, Decimal",
+      "from typing import Any, Dict, List, Optional"
+    ]
+  },
+  {
+    "path": "backend/services/joint_context.py",
+    "lines": 14,
+    "sha256": "f26992bd212b47471ea058ecbb4ba0272c92f188f8b9ffa94689b5c1abbbd82b",
+    "purpose": "Internal prioritisation only. Never changes health-v2 or produces public text.",
+    "functions": [
+      "combined_context"
+    ],
+    "classes": [],
+    "imports": []
+  },
+  {
+    "path": "backend/services/presentation.py",
+    "lines": 15,
+    "sha256": "ba695e612bd3aa186d364bcd9b1c683ac7334048848deb095c3746953225305e",
+    "purpose": "Explicit public allowlists. Internal diagnostics never cross this boundary.",
+    "functions": [
+      "public_health",
+      "public_upload"
+    ],
+    "classes": [],
+    "imports": [
+      "from copy import deepcopy"
+    ]
+  },
+  {
+    "path": "backend/services/upload_service.py",
+    "lines": 104,
+    "sha256": "91e930fd4ecd59b58acf57efa41f2bf2a0be4b93627e5b854b24482b51a85983",
+    "purpose": "CSV upload: read -> validate (via the analysis modules) -> store -> return the analysis.",
+    "functions": [
+      "decode_csv",
+      "_read_frame",
+      "_read_transactions",
+      "_portfolio_rows",
+      "process_upload"
+    ],
+    "classes": [],
+    "imports": [
+      "from __future__ import annotations",
+      "import csv",
+      "import io",
+      "from typing import Any, Dict, List, Optional",
+      "import pandas as pd",
+      "from analytics import load_portfolio",
+      "from behavior.transaction_analysis import REQUIRED_FIELDS as TRANSACTION_FIELDS",
+      "from ..database import repository",
+      "from ..models import Holding, Portfolio, PricePoint, Transaction",
+      "from .analysis_service import run_analysis",
+      "from .errors import ApiError"
+    ]
+  },
+  {
+    "path": "behavior/__init__.py",
+    "lines": 6,
+    "sha256": "61e9d33a7fef9a055bb7763287fa0302f518da26c8da15d481bdc1255b8aaf7b",
+    "purpose": "Deterministic transaction-based behaviour analysis for FinSight.",
+    "functions": [],
+    "classes": [],
+    "imports": [
+      "from .behavior_score import analyze_behavior",
+      "from .transaction_analysis import load_transactions"
+    ]
+  },
+  {
+    "path": "behavior/__main__.py",
+    "lines": 27,
+    "sha256": "ddfcb7e9fed393d3f50aa8f093ea43f04a9a7829c687846edb6089d45ef590ac",
+    "purpose": "Run with: python -m behavior path/to/transactions.csv --portfolio-id P001.",
+    "functions": [
+      "main"
+    ],
+    "classes": [],
+    "imports": [
+      "import argparse",
+      "import json",
+      "from . import analyze_behavior, load_transactions"
+    ]
+  },
+  {
+    "path": "behavior/behavior_score.py",
+    "lines": 96,
+    "sha256": "1ebe8fa8d30c424e181ec6d46c237b983b64929061569377271768305d099198",
+    "purpose": "Public entry point and transparent experimental scoring methodology.",
+    "functions": [
+      "analyze_behavior"
+    ],
+    "classes": [],
+    "imports": [
+      "import json",
+      "from .panic_selling import panic_selling_indicators",
+      "from .trading_frequency import trading_frequency",
+      "from .transaction_analysis import holding_analysis, parse_date, transaction_summary, validate_transactions"
+    ]
+  },
+  {
+    "path": "behavior/panic_selling.py",
+    "lines": 33,
+    "sha256": "a35afb4d9207be14fb9eaf26773339cce682cfd19c48bdfaf4821809f1973a07",
+    "purpose": "Short-hold loss-selling proxy; does not infer investor emotions.",
+    "functions": [
+      "panic_selling_indicators"
+    ],
+    "classes": [],
+    "imports": [
+      "import math"
+    ]
+  },
+  {
+    "path": "behavior/trading_frequency.py",
+    "lines": 24,
+    "sha256": "192dc1ec578fed388e1b2af4a8ce9ed901de69c064ccb24cda44342c1eb25bdb",
+    "purpose": "Trade frequency and a configurable high-activity proxy.",
+    "functions": [
+      "trading_frequency"
+    ],
+    "classes": [],
+    "imports": [
+      "from collections import Counter"
+    ]
+  },
+  {
+    "path": "behavior/transaction_analysis.py",
+    "lines": 149,
+    "sha256": "5c82f813e88ac9d3587521e23c75362f81d2ea26bd311839ef07d3a11ecc0ad4",
+    "purpose": "Validation, transaction summaries, and FIFO holding-duration analysis.",
+    "functions": [
+      "load_transactions",
+      "parse_date",
+      "validate_transactions",
+      "transaction_summary",
+      "holding_analysis"
+    ],
+    "classes": [],
+    "imports": [
+      "import csv",
+      "import math",
+      "from collections import defaultdict, deque",
+      "from datetime import date",
+      "from decimal import Decimal, InvalidOperation"
+    ]
+  },
+  {
+    "path": "data/generate_sample_data.py",
+    "lines": 150,
+    "sha256": "a70ce45e2917ef0d74ded92d2fc468a2ccdab359ad601cca5071841732b87725",
+    "purpose": "Regenerates every CSV in data/. Run from repo root: python data/generate_sample_data.py",
+    "functions": [
+      "write",
+      "raw",
+      "hold",
+      "tx"
+    ],
+    "classes": [],
+    "imports": [
+      "import csv",
+      "from pathlib import Path"
+    ]
+  },
+  {
+    "path": "evaluation/__init__.py",
+    "lines": 1,
+    "sha256": "39f79f88e0f07f9d2ca6060fd9e8d10beefbe09145e0ecc693574a19e4ed92dc",
+    "purpose": "Reproducible research tools; no order execution or investment recommendations.",
+    "functions": [],
+    "classes": [],
+    "imports": []
+  },
+  {
+    "path": "evaluation/backtest.py",
+    "lines": 118,
+    "sha256": "6a07f9f52466db70124bec75881c96927124b82801c56d2c1a57bfe6c43d5ac9",
+    "purpose": "Close-to-close, long/cash research backtest with a full execution ledger.",
+    "functions": [
+      "validate_prices",
+      "win_loss",
+      "run_backtest"
+    ],
+    "classes": [],
+    "imports": [
+      "from __future__ import annotations",
+      "import math",
+      "import numpy as np",
+      "import pandas as pd"
+    ]
+  },
+  {
+    "path": "evaluation/business_case.py",
+    "lines": 13,
+    "sha256": "c27c4fcc6a97f7abe4164cb27f58990a74fd5e1d2811b528bda5e7bd7e857d7d",
+    "purpose": "Illustrative unit economics, never a claim of validated demand or actual costs.",
+    "functions": [
+      "break_even"
+    ],
+    "classes": [],
+    "imports": [
+      "import math"
+    ]
+  },
+  {
+    "path": "evaluation/realized.py",
+    "lines": 25,
+    "sha256": "c2a6d0a9b86ac8f4d4250270f2a6ee08a9c161ca8636f6cf3e44505bc3bffa77",
+    "purpose": "FIFO realized P&L on supplied transactions, independent of strategy backtests.",
+    "functions": [
+      "realized_performance"
+    ],
+    "classes": [],
+    "imports": [
+      "from behavior.transaction_analysis import validate_transactions, holding_analysis",
+      "from .backtest import win_loss"
+    ]
+  },
+  {
+    "path": "evaluation/run.py",
+    "lines": 144,
+    "sha256": "fae75dadab3262cae38d4b5791db4408ad71632342ea954e8a8a7a94a26fc027",
+    "purpose": "Offline evaluation: python -m evaluation.run [--output results] [--verify].",
+    "functions": [
+      "save_json",
+      "save_csv",
+      "evaluate",
+      "compare",
+      "main"
+    ],
+    "classes": [],
+    "imports": [
+      "from __future__ import annotations",
+      "import argparse",
+      "import csv",
+      "import hashlib",
+      "import importlib.metadata",
+      "import json",
+      "import platform",
+      "import gzip",
+      "from pathlib import Path",
+      "import numpy as np",
+      "import pandas as pd",
+      "from analytics import analyze_portfolio, compute_holdings, load_portfolio",
+      "from backend.services.analysis_service import run_analysis",
+      "from backend.services.joint_context import combined_context",
+      "from behavior.transaction_analysis import load_transactions",
+      "from risk_engine import analyze_portfolio_risk",
+      "from .backtest import run_backtest, validate_prices",
+      "from .realized import realized_performance"
+    ]
+  },
+  {
+    "path": "risk_engine/__init__.py",
+    "lines": 14,
+    "sha256": "8053875196f6bfbc976f56544ccb5f5b8e1f673e3dfa60a6601ed521e8118e0d",
+    "purpose": "FinSight Risk & Diversification Engine.",
+    "functions": [],
+    "classes": [],
+    "imports": [
+      "from .concentration import calculate_concentration",
+      "from .diversification import analyze_diversification",
+      "from .risk_metrics import calculate_historical_risk",
+      "from .risk_score import analyze_portfolio_risk, calculate_risk_score"
+    ]
+  },
+  {
+    "path": "risk_engine/concentration.py",
+    "lines": 78,
+    "sha256": "93991adc8dbc157ad13006fca989f3f9f4e0c2d7cc2c94fffff3cc9172806fc0",
+    "purpose": "Concentration metrics for the FinSight risk engine.",
+    "functions": [
+      "_validate_holdings",
+      "calculate_concentration"
+    ],
+    "classes": [],
+    "imports": [
+      "from __future__ import annotations",
+      "from typing import Any, Dict",
+      "import numpy as np",
+      "import pandas as pd"
+    ]
+  },
+  {
+    "path": "risk_engine/diversification.py",
+    "lines": 73,
+    "sha256": "1b61527a619767b5b72f71f58d8d5f3a96a9fa884302a2c88246252f4b2511d1",
+    "purpose": "Diversification analysis for FinSight.",
+    "functions": [
+      "_score_from_metrics",
+      "_level",
+      "analyze_diversification"
+    ],
+    "classes": [],
+    "imports": [
+      "from __future__ import annotations",
+      "from typing import Any, Dict",
+      "import pandas as pd",
+      "from .concentration import _validate_holdings, calculate_concentration"
+    ]
+  },
+  {
+    "path": "risk_engine/risk_metrics.py",
+    "lines": 140,
+    "sha256": "40aac1d4b1e167d1ae07cae4d13e4a0be553393f24756006433d0ea9621a418b",
+    "purpose": "Historical risk metrics for FinSight.",
+    "functions": [
+      "_prepare_price_returns",
+      "calculate_historical_risk"
+    ],
+    "classes": [],
+    "imports": [
+      "from __future__ import annotations",
+      "from typing import Any, Dict",
+      "import numpy as np",
+      "import pandas as pd",
+      "from .concentration import _validate_holdings"
+    ]
+  },
+  {
+    "path": "risk_engine/risk_score.py",
+    "lines": 144,
+    "sha256": "63f2dea9cf93a141f14d8549f3052e365427b0e3f465a17e6b6a58bfa03c2b43",
+    "purpose": "Prototype risk scoring for FinSight.",
+    "functions": [
+      "_bounded",
+      "_holding_concentration_risk",
+      "_sector_concentration_risk",
+      "_diversification_risk",
+      "_volatility_risk",
+      "_drawdown_risk",
+      "_risk_level",
+      "calculate_risk_score",
+      "analyze_portfolio_risk"
+    ],
+    "classes": [],
+    "imports": [
+      "from __future__ import annotations",
+      "from typing import Any, Dict",
+      "import pandas as pd",
+      "from .concentration import calculate_concentration",
+      "from .diversification import analyze_diversification",
+      "from .risk_metrics import calculate_historical_risk"
+    ]
+  }
+]
